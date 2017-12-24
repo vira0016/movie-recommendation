@@ -1,0 +1,140 @@
+/**********************************
+DEFAULTS
+**********************************/
+
+
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+
+}
+
+html{
+font-size:20px;
+line-height:1.5;
+font-family:sans-serif;
+}
+
+/**********************************
+LAYOUT
+**********************************/
+
+.page{
+display: none;
+padding:1rem;
+margin-top:3rem;
+}
+
+.page.active{
+display:block;
+
+}
+
+.not{
+display:none;
+}
+
+/**********************************
+SEARCH BAR
+**********************************/
+.search{
+position:fixed;
+height:3rem;
+z-index:100;
+top: 0;
+right: 0;
+left:0;
+background-color: white;
+border-bottom: 1px solid #333;
+}
+
+#search-button{
+position: absolute;
+top: 0;
+z-index:120;
+
+right: 0; 
+width:3rem;
+height:3rem;
+background-color: red;
+cursor: pointer;
+}
+
+#search-input{
+position: absolute;
+top: 0;
+left: 0;
+z-index:110;
+height:3rem;
+width:100%;
+
+padding-left:1rem;
+font-size:1.8rem;
+}
+
+
+/**********************************
+SEARCH RESULTS
+**********************************/
+
+.movie{
+border:1px solid #bbb;
+padding:1rem;
+overflow:auto;
+clear: both;
+}
+
+.poster{
+float:left;
+background-color: #ddd;
+width:150px;
+height:7.3rem;
+/* min-height:150px;*/
+margin:0 1rem 1rem 0;
+}
+
+.movie-title{
+font-size:2rem;
+}
+
+movie-desc{
+font-size:1rem;
+color:#999;
+}
+
+.attribution{
+padding:1rem;
+text-align:center;
+
+}
+
+.attribution img{
+width:80%;
+/*
+animation-name: spin;
+animation-iteration-count:infinite;
+animation-direction: alternate;
+animation-duration: 0.5s;
+*/
+}
+
+@keyframes spin{
+0%{
+transform:rotate(0deg);
+}
+100%
+{
+transform:rotate(359deg);
+}
+}
+/**********************************
+RECOMMENDATIONS
+**********************************/
+
+
+
+
+/**********************************
+MISC
+**********************************/
